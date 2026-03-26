@@ -208,7 +208,7 @@
 
 <script>
 // ======= 設定你的 Google Gemini API Key =======
-const API_KEY = "AIzaSyBkWQnOBTQqtp1KvYGUlc069M6IXTlPdNQ"; // <--- 請換成你的新 Key
+const API_KEY = "AIzaSyAalY-KRXJ6NX5EV5Nsq0REECcW5Fi_Qxg"; // <--- 請換成你的新 Key
 // ==============================================
 
 let expenses = JSON.parse(localStorage.getItem('expenses')) || [];
@@ -412,7 +412,7 @@ async function handleImageUpload(event) {
 }
 
 async function callGeminiAPI(base64Str, mimeType) {
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-002:generateContent?key=${API_KEY}`;
+    const url = `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
     
     // 改良版 Prompt：更嚴格規定 AI 格式，並加入免稅判斷
     const prompt = `

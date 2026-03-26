@@ -412,7 +412,7 @@ async function handleImageUpload(event) {
 }
 
 async function callGeminiAPI(base64Str, mimeType) {
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${API_KEY}`;
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro-latest:generateContent?key=${API_KEY}`;
     
     // 改良版 Prompt：更嚴格規定 AI 格式，並加入免稅判斷
     const prompt = `
